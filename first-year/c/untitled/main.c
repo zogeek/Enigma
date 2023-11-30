@@ -12,6 +12,8 @@ struct Jeu {
     struct Elem* nextElem;
 };
 
+struct Cartes mCarte ()
+
 
 void Game() {
     char signe[4] = {'C', 'P', 'K', 'T'};
