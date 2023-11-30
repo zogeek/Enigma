@@ -12,8 +12,12 @@ struct Jeu {
     struct Elem* nextElem;
 };
 
-struct Cartes mCarte ()
-
+void addElement(struct Jeu* jeu, struct Cartes* carte) {
+    struct Jeu* elem = (struct Jeu*)malloc(sizeof(struct Jeu));
+    elem->carte = carte;
+    elem->nextElem = jeu->nextElem;
+    jeu->nextElem = elem;
+}
 
 void Game() {
     char signe[4] = {'C', 'P', 'K', 'T'};
