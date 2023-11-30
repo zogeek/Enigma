@@ -12,12 +12,13 @@ struct Jeu {
     struct Elem* nextElem;
 };
 
+
 void Game() {
     char signe[4] = {'C', 'P', 'K', 'T'};
     char numero[13] = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'V', 'D', 'R'};
     struct Jeu* jeu = NULL;
     for (int i = 0; i < 4; i++) {
-        for (int j = 0; i < 13; i++) {
+        for (int j = 0; j < 13; j++) {
             struct Cartes* carte = (struct Cartes*)malloc(sizeof(struct Cartes));
             carte->valeur = j;
             carte->couleur = i;
