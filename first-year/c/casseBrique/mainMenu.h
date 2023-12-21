@@ -6,3 +6,10 @@
 #define MAINMENU_H
 
 #endif //MAINMENU_H
+
+#include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_ttf.h>
+
+int menu(SDL_Renderer* renderer);
+void options(SDL_Renderer *renderer);

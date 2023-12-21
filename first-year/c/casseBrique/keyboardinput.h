@@ -6,3 +6,6 @@
 #define KEYBOARDINPUT_H
 
 #endif //KEYBOARDINPUT_H
+#include <SDL.h>
+
+void eventPlayer(SDL_Event *event);

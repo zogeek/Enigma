@@ -6,3 +6,5 @@
 #define GAME_H
 
 #endif //GAME_H
+
+void Game();

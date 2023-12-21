@@ -1,0 +1,3 @@
+"C:\Users\ziyad\AppData\Local\Programs\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\fivthWorkSpace.dir/objects.a
+C:\Users\ziyad\AppData\Local\Programs\CLIONN~1\bin\mingw\bin\ar.exe qc CMakeFiles\fivthWorkSpace.dir/objects.a @CMakeFiles\fivthWorkSpace.dir\objects1.rsp
+C:\Users\ziyad\AppData\Local\Programs\CLIONN~1\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\fivthWorkSpace.dir/objects.a -Wl,--no-whole-archive -o fivthWorkSpace.exe -Wl,--out-implib,libfivthWorkSpace.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fivthWorkSpace.dir\linkLibs.rsp

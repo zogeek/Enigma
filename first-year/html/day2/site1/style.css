@@ -1,0 +1,45 @@
+:root {
+ --violine: #be1566;
+ --fuschia: #e50055;
+ --vertFeuille: rgb(118, 184, 42);
+ --jauneOr: rgb(252, 190, 21);
+ --lavande: rgb(167, 139, 192);
+ --violet: rgb(112, 34, 131);
+ --blanc: rgb(255, 255, 255);
+ --noir: rgb(0, 0, 0);
+}
+header{
+    background: linear-gradient(90deg, var(--violine) 0%, var(--fuschia) 100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.nav{
+
+    text-align: right;
+    margin: 0;
+}
+
+.logo img{
+    max-height: 4rem;
+    width: auto;
+}
+
+.pres{
+
+    margin-top: 2rem;
+    background-color: #fff;
+    width: 20rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.pres img{
+    
+    max-height: 6rem;
+    width: auto;
+}
