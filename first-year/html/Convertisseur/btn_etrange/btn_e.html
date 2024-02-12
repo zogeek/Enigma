@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converter Strange</title>
+    <title>Strange Converter</title>
     <link rel="stylesheet" type="text/css" href="btn_e.css">
     <script src="../Convertisseur.js"></script>
 
@@ -12,26 +13,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
     <div class="Onglet_Menu">
-        <a href="../btn_scientifique/btn_sc.html">
-            <button class="btn_S"> 
-                 <h2> Scientific converter </h2>
+        <a href="../sc/Home_page - sc_btn/Convertisseur.html">
+            <button class="btn_S">
+                <h2> Scientific converter </h2>
             </button>
-        </a>  
+        </a>
 
         <a href="../Home_page/Convertisseur.html">
-            <button class="btn_h"> 
+            <button class="btn_h">
                 <h2 class="home"> Home Page </h1>
             </button>
-        </a>  
+        </a>
 
         <a href="../btn_etrange/btn_e.html">
-            <button class="btn_E"> 
-                <h2> Strange converter </h2> 
+            <button class="btn_E">
+                <h2> Strange converter </h2>
             </button>
-        </a> 
+        </a>
     </div>
 
     <div class="Page">
@@ -41,46 +43,140 @@
                 The Strange Converter
             </h1>
         </div>
+        
         <div class="Pres">
-            <p>
+                <div class="convert">
+                    <form id="conversionForm">
 
-                Integer elementum urna nec purus auctor lacinia vitae quis mi. Aenean vehicula, lacus ut mattis rhoncus, lacus lectus posuere eros, nec tempus libero libero non elit. In pulvinar elit non nibh malesuada, non lobortis quam auctor. Pellentesque tincidunt tincidunt metus. In hac habitasse platea dictumst. Sed feugiat, justo sed sollicitudin ullamcorper, magna sapien interdum dui, eget luctus leo diam in quam. Aenean blandit, arcu ut pharetra posuere, ex lacus facilisis velit, ac placerat turpis felis et felis. In a odio ornare, scelerisque nisi nec, placerat tellus. Cras finibus varius nulla, sed fringilla nunc aliquam quis.
+                        <h2 id="vToc">Choose your value to convert :</h2>
+    
+                        <input type="number" id="value" placeholder="Your value">
+    
+                        <div class="select_val">
+    
+                        <select id="unitFrom">
+    
+                            <option value="centimeter">Centimeter</option>
+                            <option value="meter">Meter</option>
+                            <option value="kilometer">Kilometer</option>
+                            <option value="millimeter">Millimeter</option>
+                            <option value="micrometer">Micrometer</option>
+                            <option value="nanometer">Nanometer</option>
+                            <option value="inch">Inch</option>
+                            <option value="foot">Foot</option>
+                            <option value="yard">Yard</option>
+                            <option value="mile">Mile</option>
+                            <option value="tour eiffel">Tour Eiffel</option>
+                            <option value="homme">Homme</option>
+                            <option value="smartphone">Smartphone</option>
+                            <option value="ariane 5">Ariane 5</option>
+                            <option value="golden gate">Golden Gate</option>
+                            <option value="football field">Football Field</option>
+                            <option value="blue whale">Blue Whale</option>
+                            <option value="eiffel tower">Eiffel Tower</option>
+                            <option value="empire state building">Empire State Building</option>
+                            
+                        </select>
+    
+                        <button id="btn_exchange" type="button" onclick="exchange()">
+    
+                            <img class="rotating" src="../assets/img/pngwing.com.png" alt="turn">
+    
+                        </button>
+    
+                        <select id="unitTo">
+    
+                            <option value="centimeter">Centimeter</option>
+                            <option value="meter">Meter</option>
+                            <option value="kilometer">Kilometer</option>
+                            <option value="millimeter">Millimeter</option>
+                            <option value="micrometer">Micrometer</option>
+                            <option value="nanometer">Nanometer</option>
+                            <option value="inch">Inch</option>
+                            <option value="foot">Foot</option>
+                            <option value="yard">Yard</option>
+                            <option value="mile">Mile</option>
+                            <option value="tour eiffel">Tour Eiffel</option>
+                            <option value="homme">Homme</option>
+                            <option value="smartphone">Smartphone</option>
+                            <option value="ariane 5">Ariane 5</option>
+                            <option value="golden gate">Golden Gate</option>
+                            <option value="football field">Football Field</option>
+                            <option value="blue whale">Blue Whale</option>
+                            <option value="eiffel tower">Eiffel Tower</option>
+                            <option value="empire state building">Empire State Building</option>
+                            
+    
+                        </select>
 
-                Vivamus tincidunt diam quis est ornare, nec viverra magna laoreet. Maecenas auctor eros non arcu laoreet, vel rhoncus tellus scelerisque. Morbi eget imperdiet quam. Pellentesque id vehicula felis. Cras et posuere tortor. Maecenas consequat mollis luctus. Nullam condimentum, ante et ornare aliquet, elit ante viverra est, ut faucibus metus erat ultrices tellus.
-            
-                Integer elementum urna nec purus auctor lacinia vitae quis mi. Aenean vehicula, lacus ut mattis rhoncus, lacus lectus posuere eros, nec tempus libero libero non elit. In pulvinar elit non nibh malesuada, non lobortis quam auctor. Pellentesque tincidunt tincidunt metus. In hac habitasse platea dictumst. Sed feugiat, justo sed sollicitudin ullamcorper, magna sapien interdum dui, eget luctus leo diam in quam. Aenean blandit, arcu ut pharetra posuere, ex lacus facilisis velit, ac placerat turpis felis et felis. In a odio ornare, scelerisque nisi nec, placerat tellus. Cras finibus varius nulla, sed fringilla nunc aliquam quis.
+    
+                    </div>
 
-                Vivamus tincidunt diam quis est ornare, nec viverra magna laoreet. Maecenas auctor eros non arcu laoreet, vel rhoncus tellus scelerisque. Morbi eget imperdiet quam. Pellentesque id vehicula felis. Cras et posuere tortor. Maecenas consequat mollis luctus. Nullam condimentum, ante et ornare aliquet, elit ante viverra est, ut faucibus metus erat ultrices tellus.
-            
-            </p>     
+                    <button id="btn_conv" type="button" onclick="executeConversion()">
+    
+                        <p>Convert</p>
+
+                    </button>
+    
+                    <h2>Result :</h2>
+    
+                    <div class="res">
+    
+                        <p id="result"></p>
+    
+                    </div>
+    
+                    </form>
+    
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="foot">
             <div class="fix">
                 <h3 class="fix"> Info perso </h3>
                 <h3 class="fix"> Contact </h3>
                 <h3 class="fix"> More info </h3>
-                <h3 class="fix"> Ester egg </h3>
             </div>
-    
+
             <div class="fin">
                 <div class="f_i">
-                    <p>Integer elementum urna nec purus auctor lacinia vitae quis mi. Aenean vehicula, lacus ut mattis rhoncus, lacus lectus posuere eros, nec tempus libero libero non elit. In pulvinar elit non nibh malesuada, non lobortis quam auctor. Pellentesque tincidunt tincidunt metus. In hac habitasse platea dictumst. Sed feugiat, justo sed sollicitudin ullamcorper, magna sapien interdum dui, eget luctus leo diam in quam. Aenean blandit, arcu ut pharetra posuere, ex lacus facilisis velit, ac placerat turpis felis et felis. In a odio ornare, scelerisque nisi nec, placerat tellus. Cras finibus varius nulla, sed fringilla nunc aliquam quis.</p>
+                    <p>
+                        My Name is Alexis and I'm a student in computer science. I'm 17 years old and I live in France. <br><br>
+
+                        My friend Zihad working on this project with me for our school. We are in the same class.<br><br>
+
+                        We are currently studying at a private school called enigma<br><br>
+
+                        This project was designed in 3 weeks<br><br>
+
+                        I want to do a simple and sober site beacause i really like to designed website.<br><br>
+
+                        I hope you will enjoy it !<br><br>
+                    </p>
                 </div>
-    
-                <div class="f_c">           
-                    <p>Integer elementum urna nec purus auctor lacinia vitae quis mi. Aenean vehicula, lacus ut mattis rhoncus, lacus lectus posuere eros, nec tempus libero libero non elit. In pulvinar elit non nibh malesuada, non lobortis quam auctor. Pellentesque tincidunt tincidunt metus. In hac habitasse platea dictumst. Sed feugiat, justo sed sollicitudin ullamcorper, magna sapien interdum dui, eget luctus leo diam in quam. Aenean blandit, arcu ut pharetra posuere, ex lacus facilisis velit, ac placerat turpis felis et felis. In a odio ornare, scelerisque nisi nec, placerat tellus. Cras finibus varius nulla, sed fringilla nunc aliquam quis.</p>
+
+                <div class="f_c">
+                    <p>
+                        You can contact Alexis on this email : Alexis.HAZEBROUCK@enigma-school.com<br><br>
+
+                        MY instagram : alex_hbzk.  Add me I am very beautiful....<br><br>
+
+
+                    </p>
                 </div>
-    
+
                 <div class="f_m">
-                    <p>Integer elementum urna nec purus auctor lacinia vitae quis mi. Aenean vehicula, lacus ut mattis rhoncus, lacus lectus posuere eros, nec tempus libero libero non elit. In pulvinar elit non nibh malesuada, non lobortis quam auctor. Pellentesque tincidunt tincidunt metus. In hac habitasse platea dictumst. Sed feugiat, justo sed sollicitudin ullamcorper, magna sapien interdum dui, eget luctus leo diam in quam. Aenean blandit, arcu ut pharetra posuere, ex lacus facilisis velit, ac placerat turpis felis et felis. In a odio ornare, scelerisque nisi nec, placerat tellus. Cras finibus varius nulla, sed fringilla nunc aliquam quis.</p>
+                    <p>
+                        I have no inspiration... I'm sorry!<br><br>
+                    </p>
                 </div>
-    
-                <div class="f_e">
-                    <p>Integer elementum urna nec purus auctor lacinia vitae quis mi. Aenean vehicula, lacus ut mattis rhoncus, lacus lectus posuere eros, nec tempus libero libero non elit. In pulvinar elit non nibh malesuada, non lobortis quam auctor. Pellentesque tincidunt tincidunt metus. In hac habitasse platea dictumst. Sed feugiat, justo sed sollicitudin ullamcorper, magna sapien interdum dui, eget luctus leo diam in quam. Aenean blandit, arcu ut pharetra posuere, ex lacus facilisis velit, ac placerat turpis felis et felis. In a odio ornare, scelerisque nisi nec, placerat tellus. Cras finibus varius nulla, sed fringilla nunc aliquam quis.</p>
                 </div>
             </div>
-    
-            
+
+
         </div>
 </body>
+
 </html>

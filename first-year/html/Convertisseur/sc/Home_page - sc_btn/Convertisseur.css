@@ -25,6 +25,7 @@
     background-color: white;
     width: 15rem;
     height: 3rem;
+    text-decoration: underline;
 }
 .btn_S:hover{
     font-size: 0.57rem;
@@ -37,13 +38,13 @@
     border: 0px solid white;
     border-radius: 20px;
     color: black;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: white;
     width: 20rem;
     height: 4rem;
 }
 .btn_h:hover{
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     transition: all 0.4s;
 }
 
@@ -79,10 +80,10 @@ body{
 
 .Pres_t{
     margin: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    padding-top: 4rem;
-    padding-bottom:6rem ;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding-top: 2rem;
+    padding-bottom:2rem ;
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 20px;
@@ -99,8 +100,7 @@ body{
     margin-left: 20rem;
     margin-right: 20rem;
     padding: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: -10rem;
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 20px;
@@ -192,8 +192,6 @@ body{
     background-color: #F6F740;
     border-radius: 20px;
     margin-bottom: 2rem;
-    width: 400px;
-    height: auto;
 }
 
 .des_2{
@@ -203,8 +201,6 @@ body{
     background-color: #F6F740;
     border-radius: 20px;
     margin-bottom: 2rem;
-    width: 400px;
-    height: auto;
 }
 
 .fix{

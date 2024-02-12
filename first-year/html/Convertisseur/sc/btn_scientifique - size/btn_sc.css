@@ -25,6 +25,7 @@
     background-color: white;
     width: 15rem;
     height: 3rem;
+    text-decoration: underline;
 }
 .btn_S:hover{
     font-size: 0.57rem;
@@ -37,13 +38,13 @@
     border: 0px solid white;
     border-radius: 20px;
     color: black;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: white;
     width: 20rem;
     height: 4rem;
 }
 .btn_h:hover{
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     transition: all 0.4s;
 }
 
@@ -81,12 +82,13 @@ body{
     margin: 1rem;
     margin-left: 10rem;
     margin-right: 10rem;
-    padding-top: 4rem;
-    padding-bottom:6rem ;
+    padding-top: 2rem;
+    padding-bottom:4rem ;
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 20px;
     background-color: #F6F740;
+
 }
 
 .title{
@@ -94,20 +96,7 @@ body{
     font-size: 3.7rem;
 }
 
-.Pres{
-    margin-top: -4.5rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    padding: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border-radius: 20px;
-    background-color: #F6F740;
-    border: 5px solid #fcf7f7;
-    text-align: center;
-}
+
 
 .choose{
     margin: 3rem;
@@ -122,7 +111,7 @@ body{
 }
 
 .btn_scienc{
-    border: 2px solid #fcf7f7;
+    border: 2px solid white;
     margin-left: 10rem;
     border-radius: 15px;
     padding: 2rem;
@@ -131,10 +120,10 @@ body{
     background-color: #F6F740;
 }
 .btn_scienc:hover{
-    background-color: #F6F740;
+    background-color: #fcf7f7;
     transition: all 0.7s;
-    border: 2px solid #000000;
-    color: #030303;
+    border: 2px solid #F6F740;
+    color: #F6F740;
 }
 .btn_stang{
     border: 2px solid #fcf8f7;
@@ -146,31 +135,10 @@ body{
     background-color: #F6F740;
 }
 .btn_stang:hover{
-    background-color: #F6F740;
+    background-color: #fcf7f7;
     transition: all 0.7s;
-    border: 2px solid #000000;
-    color: #030303;
-}
-
-@-moz-keyframes spin {
-    100% { -moz-transform: rotate(360deg); }
-}
-  @-webkit-keyframes spin {
-    100% { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
-.rotating{
-    display: inline;
-    width: 50px;
-    height: 50px;
-}
-
-.rotating:hover{
-
-    animation: spin 0.9s ease-in-out ;
+    border: 2px solid #F6F740;
+    color: #F6F740;
 }
 
 .Desc{
@@ -192,8 +160,6 @@ body{
     background-color: #F6F740;
     border-radius: 20px;
     margin-bottom: 2rem;
-    width: 400px;
-    height: auto;
 }
 
 .des_2{
@@ -203,8 +169,6 @@ body{
     background-color: #F6F740;
     border-radius: 20px;
     margin-bottom: 2rem;
-    width: 400px;
-    height: auto;
 }
 
 .fix{
@@ -245,5 +209,174 @@ body{
     display: flex;
     justify-content: space-around;
     align-items:baseline;
-    background-color: #ffffff;
+    background-color: #ffffff;  
+}
+
+.Pres{
+    margin-top: -4.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 20px;
+    background-color: #F6F740;
+    border: 5px solid #fcf7f7;
+    text-align: center;
+}
+
+#vToc{
+    font-size: 2rem;
+}
+
+#value{
+    margin: 0rem;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#value:hover{
+    color: #000000;
+    transition: all 0.7s;
+    border: 2px solid #000000;
+}
+
+#value:focus{
+    color: #000000;
+    outline: none;
+    border: 2px solid #000000;
+}
+
+.select_val{
+    margin: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#unitFrom{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+#unitFrom:hover{
+    color: #000000;
+    transition: all 0.7s;
+    border: 2px solid #000000;
+}
+
+#unitFrom:focus{
+    color: #000000;
+    outline: none;
+    border: 2px solid #000000;
+}
+
+#unitTo{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+#unitTo:hover{
+    color: #000000;
+    transition: all 0.7s;
+    border: 2px solid #000000;
+}
+
+#unitTo:focus{
+    color: #000000;
+    outline: none;
+    border: 2px solid #000000;
+}
+
+#btn_exchange{
+    width: 60px;
+    height: 50px;
+    margin: 1rem;
+    border: 0px solid white;
+    background-color: #F6F740;
+}
+
+#btn_conv{
+    width: 60px;
+    height: 50px;
+    margin: 1rem;
+    border: 0px solid white;
+    background-color: #F6F740;
+}
+
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+  @-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.rotating{
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+
+.rotating:hover{
+    animation: spin 0.7s ease-in-out ;
+}
+
+#result{
+    margin: 1rem;
+    margin-bottom: 2rem;
+    width: 800px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn_conv{
+    width: 200px;
+    height: 50px;
+    margin: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #F6F740;
+    font-size: 1rem;
+}
+
+#btn_conv:hover{
+    background-color: #fcf7f7;
+    transition: all 0.5s;
+    border: 2px solid #000000;
+    font-size: 1.1rem;
+}
+
+.foot{
+    background-color: white;
 }
