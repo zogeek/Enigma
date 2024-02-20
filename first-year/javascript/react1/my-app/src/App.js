@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import TodoList from "./TodoList.js";
+import TodoList from "./TodoList";
+import TodoItems from "./TodoItems";
 import "./App.css";
 
 class App extends Component {
@@ -30,6 +31,23 @@ class App extends Component {
     this.setState({
       currentItem,
     });
+  };
+
+  deleteItem = (key) => {
+    const filteredItems = this.state.items.filter((item) => {
+      return item.key !== key;
+    });
+    this.setState({
+      items: filteredItems,
+    });
+  };
+
+  createTasks = (item) => {
+    return (
+      <li key={item.key} onClick={() => this.props.deleteItem(item.key)}>
+        {item.text}
+      </li>
+    );
   };
 
   render() {
