@@ -1,0 +1,10 @@
+# ninja log v5
+11	385	7225227555652796	CMakeFiles/untitled1.dir/main.c.obj	b7ca978708fbab8
+1	411	7225227555886945	CMakeFiles/untitled1.dir/Palindrome.c.obj	5da204b0034a84cb
+411	703	7225227559070230	untitled1.exe	621e62aab9a35498
+4	316	7225227763880645	CMakeFiles/untitled1.dir/main.c.obj	b7ca978708fbab8
+318	619	7225227766834837	untitled1.exe	621e62aab9a35498
+4	266	7225231665760060	CMakeFiles/untitled1.dir/Palindrome.c.obj	5da204b0034a84cb
+267	638	7225231669599504	untitled1.exe	621e62aab9a35498
+4	114	7225231834909586	CMakeFiles/untitled1.dir/Palindrome.c.obj	5da204b0034a84cb
+117	307	7225231836688914	untitled1.exe	621e62aab9a35498

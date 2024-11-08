@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric Converter</title>
+
+    <link rel="stylesheet" type="text/css" href="btn_sc.css">
+    <script src="../../Convertisseur.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="Onglet_Menu">
+        <a href="../Home_page - sc_btn/Convertisseur.html">
+            <button class="btn_S">
+                <h2> Scientific converter </h2>
+            </button>
+        </a>
+
+        <a href="../../Home_page/Convertisseur.html">
+            <button class="btn_h">
+                <h2 class="home"> Home Page </h1>
+            </button>
+        </a>
+
+        <a href="../../btn_etrange/btn_e.html">
+            <button class="btn_E">
+                <h2> Strange converter </h2>
+            </button>
+        </a>
+    </div>
+
+    <div class="Page">
+
+        <div class="Pres_t">
+            <h1 class="title">
+                The metric Converter !
+            </h1>
+        </div>
+
+        <div class="Pres">
+
+            <div class="convert">
+
+                <form id="conversionForm">
+
+                    <h2 id="vToc">Choose your value to convert :</h2>
+
+                    <input type="number" id="value" placeholder="Your value">
+
+                    <div class="select_val">
+
+                    <select id="unitFrom">
+
+                        <option value="centimeter">Centimeter</option>
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="millimeter">Millimeter</option>
+                        <option value="micrometer">Micrometer</option>
+                        <option value="nanometer">Nanometer</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="yard">Yard</option>
+                        <option value="mile">Mile</option>
+                        
+                    </select>
+
+                    <button id="btn_exchange" type="button" onclick="exchange()">
+
+                        <img class="rotating" src="../../assets/img/pngwing.com.png" alt="turn">
+
+                    </button>
+
+                    <select id="unitTo">
+
+                        <option value="centimeter">Centimeter</option>
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="millimeter">Millimeter</option>
+                        <option value="micrometer">Micrometer</option>
+                        <option value="nanometer">Nanometer</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="yard">Yard</option>
+                        <option value="mile">Mile</option>
+                        
+
+                    </select>
+
+                </div>
+
+                <button id="btn_conv" type="button" onclick="executeConversion()">
+
+                    <p>Convert</p>
+
+                </button>
+
+                <h2>Result :</h2>
+
+                <div class="res">
+
+                    <p id="result"></p>
+
+                </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="foot">
+            <div class="fix">
+                <h3 class="fix"> Info perso </h3>
+                <h3 class="fix"> Contact </h3>
+                <h3 class="fix"> More info </h3>
+            </div>
+
+            <div class="fin">
+                <div class="f_i">
+                    <p>
+                        My Name is Alexis and I'm a student in computer science. I'm 17 years old and I live in France. <br><br>
+
+                        My friend Zihad working on this project with me for our school. We are in the same class.<br><br>
+
+                        We are currently studying at a private school called enigma<br><br>
+
+                        This project was designed in 3 weeks<br><br>
+
+                        I want to do a simple and sober site beacause i really like to designed website.<br><br>
+
+                        I hope you will enjoy it !<br><br>
+                    </p>
+                </div>
+
+                <div class="f_c">
+                    <p>
+                        You can contact Alexis on this email : Alexis.HAZEBROUCK@enigma-school.com<br><br>
+
+                        MY instagram : alex_hbzk.  Add me I am very beautiful....<br><br>
+
+
+                    </p>
+                </div>
+
+                <div class="f_m">
+                    <p>
+                        I have no inspiration... I'm sorry!<br><br>
+                    </p>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

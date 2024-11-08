@@ -1,0 +1,8 @@
+//
+// Created by ziyad on 01/12/2023.
+//
+
+#ifndef SPACEINVADER_SPACESHIP_H
+#define SPACEINVADER_SPACESHIP_H
+
+#endif //SPACEINVADER_SPACESHIP_H

@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Onglet_Menu{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+.btn_S{
+    font-family: 'Kanit', sans-serif;
+    margin: 1rem;
+    margin-left: 15rem;
+    border: 0px solid white;
+    border-radius: 15px;
+    color: black;
+    font-size: 0.6rem;
+    background-color: white;
+    width: 15rem;
+    height: 3rem;
+    text-decoration: underline;
+}
+.btn_S:hover{
+    font-size: 0.57rem;
+    transition: all 0.4s;
+}
+
+.btn_h{
+    font-family: 'Kanit', sans-serif;
+    padding: 1rem;
+    border: 0px solid white;
+    border-radius: 20px;
+    color: black;
+    font-size: 1rem;
+    background-color: white;
+    width: 20rem;
+    height: 4rem;
+}
+.btn_h:hover{
+    font-size: 0.95rem;
+    transition: all 0.4s;
+}
+
+.btn_E{
+    font-family: 'Kanit', sans-serif;
+    margin: 1rem;
+    margin-right: 15rem;
+    border: 0px solid white;
+    border-radius: 20px;
+    color: black;
+    font-size: 0.6rem;
+    background-color: white;
+    width: 15rem;
+    height: 3rem;
+}
+.btn_E:hover{
+    font-size: 0.57rem;
+    transition: all 0.4s;
+}
+
+
+body{
+    background-color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.Page{
+    padding-top: 70px;
+    background-color: #fcf7f7;
+
+}
+
+.Pres_t{
+    margin: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding-top: 2rem;
+    padding-bottom:2rem ;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 20px;
+    background-color: #F6F740;
+}
+
+.title{
+    text-align: center;
+    font-size: 3.7rem;
+}
+
+.Pres{
+    margin-top: -4.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding: 2rem;
+    padding-top: -10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 20px;
+    background-color: #F6F740;
+    border: 5px solid #fcf7f7;
+    text-align: center;
+}
+
+.choose{
+    margin: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.butt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_scienc{
+    border: 2px solid #fcf7f7;
+    margin-left: 10rem;
+    border-radius: 15px;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #F6F740;
+}
+.btn_scienc:hover{
+    background-color: #F6F740;
+    transition: all 0.7s;
+    border: 2px solid #000000;
+    color: #030303;
+}
+.btn_stang{
+    border: 2px solid #fcf8f7;
+    margin-right: 10rem;
+    border-radius: 15px;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #F6F740;
+}
+.btn_stang:hover{
+    background-color: #F6F740;
+    transition: all 0.7s;
+    border: 2px solid #000000;
+    color: #030303;
+}
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+  @-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.rotating{
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+
+.rotating:hover{
+
+    animation: spin 0.9s ease-in-out ;
+}
+
+.Desc{
+    margin: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.des_1{
+    padding: 2rem;
+    margin-left: 20rem;
+    margin-right: 1rem;
+    background-color: #F6F740;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.des_2{
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 20rem;
+    background-color: #F6F740;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.fix{
+    padding: 1rem;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: white;
+   }
+
+.f_i{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: 300px;
+    height: auto;
+}
+.f_c{
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: 300px;
+    height: auto;
+}
+.f_m{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: 300px;
+    height: auto;
+}
+
+.fin{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    background-color: #ffffff;
+}

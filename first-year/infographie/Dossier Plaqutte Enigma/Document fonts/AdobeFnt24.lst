@@ -1,0 +1,103 @@
+%!Adobe-FontList 1.24
+%Locale:0x40c
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KeepCalm-Medium
+FamilyName:Keep Calm
+StyleName:Regular
+FullName:Keep Calm Medium
+MenuName:Keep Calm Med
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ziyad\OneDrive - ENIGMA SCHOOL\cours\first-year\infographie\Dossier Plaqutte Enigma\Document fonts\KeepCalm-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:86716
+FileModTime:1712048407
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Keep Calm Medium
+NameArray:0,Win,1,Keep Calm Med
+NameArray:0,Win,16,Keep Calm
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ziyad\OneDrive - ENIGMA SCHOOL\cours\first-year\infographie\Dossier Plaqutte Enigma\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:1712217563
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ArialMT
+FamilyName:Arial
+StyleName:Regular
+FullName:Arial
+MenuName:Arial
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ziyad\OneDrive - ENIGMA SCHOOL\cours\first-year\infographie\Dossier Plaqutte Enigma\Document fonts\arial.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1045960
+FileModTime:1651900758
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-BoldMT
+FamilyName:Arial
+StyleName:Bold
+FullName:Arial Bold
+MenuName:Arial
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\ziyad\OneDrive - ENIGMA SCHOOL\cours\first-year\infographie\Dossier Plaqutte Enigma\Document fonts\arialbd.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:990208
+FileModTime:1651900758
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial Bold
+NameArray:0,Win,1,Arial
+%EndFont
+

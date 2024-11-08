@@ -1,0 +1,47 @@
+body {
+  box-sizing: border-box;
+  background-color: #121212;
+}
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.container > div {
+  background-color: #121212;
+  color: aliceblue;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.container > div > a {
+  color: aliceblue;
+  text-decoration: none;
+}
+#form {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: #121212;
+  color: aliceblue;
+}
+
+.skill {
+  width: 50%;
+  padding: 10px;
+  background-color: #121212;
+  color: aliceblue;
+}
+
+label {
+  display: block;
+  color: aliceblue;
+  margin: 10px 0;
+
+}
