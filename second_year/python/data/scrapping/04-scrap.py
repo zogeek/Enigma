@@ -53,20 +53,17 @@ def scrap():
     if not a_tag or 'href' not in a_tag.attrs:
         print("`a` tag or `href` attribute not found")
         return
+    for i in range(1,7):
+        soup2 = fetch_url(a_tag['href']+f'?p={i}')
+        if not soup2:
+            return
 
-    soup2 = fetch_url(a_tag['href'])
-    if not soup2:
-        return
-
-    product_links = [a['href'] for a in soup2.find_all("a", {"class": "product-item-link"}) if 'href' in a.attrs]
-    print(f"Found {len(product_links)} products")
-    print("Extracting product information")
-    for product in product_links:
-        extract_product_info(product)
+        product_links = [a['href'] for a in soup2.find_all("a", {"class": "product-item-link"}) if 'href' in a.attrs]
+        for product in product_links:
+            extract_product_info(product)
 
     df = pd.DataFrame(products)
-    print(df)
-    df.to_csv("products.csv", index=False)
+    df.to_csv("products.csv", index=False, encoding='utf-8', sep=';')
     print("Done")
 
 scrap()
