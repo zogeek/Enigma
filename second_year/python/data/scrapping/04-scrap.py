@@ -1,9 +1,11 @@
 import bs4 as bs
 import requests
+import pandas as pd
 
 session = requests.Session()
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0'}
 
+products = []
 
 def fetch_url(url):
     try:
@@ -14,26 +16,28 @@ def fetch_url(url):
         print(f"Request failed: {e}")
         return None
 
-
 def extract_product_info(product_url):
     soup = fetch_url(product_url)
     if not soup:
         return
 
     title = soup.find("span", {"data-ui-id": "page-title-wrapper"})
+    price = soup.find("meta", property="product:price:amount")
     specs = soup.find("table", {"id": "product-attribute-specs-table"})
-    price = soup.find("span", {"class": "price"})
 
-    if title:
-        print(f"Title: {title.text}")
+    product_info = {
+        "Title": title.text if title else None,
+        "Price": price['content'] if price else None
+    }
+
     if specs:
-        print("Specifications:")
         for row in specs.find_all("tr"):
-            print(f"{row.find('th').text}: {row.find('td').text}")
-    if price:
-        print(f"Price: {price.text}")
-    print()
+            key = row.find("th")
+            value = row.find("td")
+            if key and value:
+                product_info[key.text.strip()] = value.text.strip()
 
+    products.append(product_info)
 
 def scrap():
     soup = fetch_url("https://www.recommerce.com")
@@ -54,10 +58,15 @@ def scrap():
     if not soup2:
         return
 
-    products = [a['href'] for a in soup2.find_all("a", {"class": "product-item-link"}) if 'href' in a.attrs]
-    print(f"Found {len(products)} products")
-    for product in products:
+    product_links = [a['href'] for a in soup2.find_all("a", {"class": "product-item-link"}) if 'href' in a.attrs]
+    print(f"Found {len(product_links)} products")
+    print("Extracting product information")
+    for product in product_links:
         extract_product_info(product)
 
+    df = pd.DataFrame(products)
+    print(df)
+    df.to_csv("products.csv", index=False)
+    print("Done")
 
 scrap()
