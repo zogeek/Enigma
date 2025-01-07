@@ -1,24 +1,39 @@
 /* eslint-disable react/prop-types */
-export default function List(props) {
+import "./List.css";
+
+export default function List({ list, onRemoveItem }) {
     return (
-        <ul>
-            {props.list.map((item) => (
-                <Item key={item.id} {...item} />
+        <ul className="list">
+            {list.map((item) => (
+                <Item
+                    key={item.objectID}
+                    {...item}
+                    onRemoveItem={onRemoveItem}
+                />
             ))}
         </ul>
     );
 }
 
-function Item(props) {
+function Item({
+    objectID,
+    url,
+    title,
+    author,
+    num_comments,
+    points,
+    onRemoveItem,
+}) {
     return (
-        <li>
-            <a href={props.url} target="_blank" rel="noopener noreferrer">
-                {props.title}
+        <li className="list-item">
+            <a href={url} target="_blank" rel="noopener noreferrer">
+                {title}
             </a>
+            <span>Auteur : {author} </span>
             <p>
-                {props.author} | {props.num_comments} comments | {props.points}{" "}
-                points
+                Comments : {num_comments} | Points : {points}
             </p>
+            <button onClick={() => onRemoveItem(objectID)}>Delete</button>
         </li>
     );
 }

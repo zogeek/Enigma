@@ -1,0 +1,29 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.list-item a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.list-item span {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+.list-item p {
+    margin: 5px 0 0;
+    color: #999;
+}

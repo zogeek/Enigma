@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
 
 export default function SearchForm({ searchTerm, onSearchInput }) {
     const handleChange = (e) => {
