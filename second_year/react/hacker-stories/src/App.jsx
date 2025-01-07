@@ -12,6 +12,11 @@ const initialState = {
     isError: false,
 };
 
+const STORIES_FETCH_INIT = "STORIES_FETCH_INIT";
+const STORIES_FETCH_SUCCESS = "STORIES_FETCH_SUCCESS";
+const STORIES_FETCH_FAILURE = "STORIES_FETCH_FAILURE";
+const REMOVE_STORY = "REMOVE_STORY";
+
 function storiesreducer(state, action) {
     switch (action.type) {
         case "STORIES_FETCH_INIT":
@@ -57,31 +62,29 @@ function App() {
 
     function handleRemoveStory(objectID) {
         dispatchstories({
-            type: "REMOVE_STORY",
+            type: REMOVE_STORY,
             payload: { objectID },
         });
     }
 
     useEffect(() => {
-        dispatchstories({ type: "STORIES_FETCH_INIT" });
+        dispatchstories({ type: STORIES_FETCH_INIT });
         axios(`${API_ENDPOINT}${searchTerm}`)
             .then(({ data }) => {
                 dispatchstories({
-                    type: "STORIES_FETCH_SUCCESS",
+                    type: STORIES_FETCH_SUCCESS,
                     payload: data,
                 });
             })
             .catch((err) => {
                 console.log(err);
-                dispatchstories({ type: "STORIES_FETCH_FAILURE" });
+                dispatchstories({ type: STORIES_FETCH_FAILURE });
             });
     }, [searchTerm]);
 
     useEffect(() => {
         localStorage.setItem("search", searchTerm);
     }, [searchTerm]);
-
-    console.log(stories.data);
 
     return (
         <div className="app-container">
