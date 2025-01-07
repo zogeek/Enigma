@@ -2,53 +2,16 @@ import React, { useEffect, useReducer } from "react";
 import axios from "axios";
 import SearchForm from "./components/SearchForm";
 import List from "./components/List";
+import {
+    storiesreducer,
+    initialState,
+    STORIES_FETCH_INIT,
+    STORIES_FETCH_SUCCESS,
+    STORIES_FETCH_FAILURE,
+    REMOVE_STORY,
+} from "./storiesReducer.js";
 import "./App.css";
-
 const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?query=";
-
-const initialState = {
-    data: { hits: [] },
-    isLoading: true,
-    isError: false,
-};
-
-const STORIES_FETCH_INIT = "STORIES_FETCH_INIT";
-const STORIES_FETCH_SUCCESS = "STORIES_FETCH_SUCCESS";
-const STORIES_FETCH_FAILURE = "STORIES_FETCH_FAILURE";
-const REMOVE_STORY = "REMOVE_STORY";
-
-function storiesreducer(state, action) {
-    switch (action.type) {
-        case "STORIES_FETCH_INIT":
-            return {
-                ...state,
-                isLoading: true,
-                isError: false,
-            };
-        case "STORIES_FETCH_SUCCESS":
-            return {
-                ...state,
-                isLoading: false,
-                isError: false,
-                data: action.payload,
-            };
-        case "STORIES_FETCH_FAILURE":
-            return {
-                ...state,
-                isLoading: false,
-                isError: true,
-            };
-        case "REMOVE_STORY":
-            return {
-                ...state,
-                data: state.data.filter(
-                    (story) => action.payload.objectID !== story.objectID
-                ),
-            };
-        default:
-            throw new Error();
-    }
-}
 
 function App() {
     const [stories, dispatchstories] = useReducer(storiesreducer, initialState);
